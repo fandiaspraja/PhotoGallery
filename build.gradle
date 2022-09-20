@@ -1,0 +1,75 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    ext.kotlin_version = '1.5.21'
+    ext.appcompat_version = "1.3.1"
+    ext.core_ktx_version = "1.6.0"
+    ext.constraint_version = "2.1.0"
+    ext.legacy_support_version = "1.0.0"
+    ext.junit_version = "4.13.2"
+    ext.androidx_junit_version = "1.1.3"
+    ext.espresso_version = "3.4.0"
+    ext.multidex_version = "2.0.1"
+
+    ext.cardview_version = "1.0.0"
+    ext.recyclerview_version = "1.2.1"
+    ext.material_version = "1.4.0"
+    ext.glide_version = "4.12.0"
+
+//    ext.room_version = "2.3.0"
+    ext.room_version = "2.4.0-alpha03"
+
+    ext.retrofit_version = "2.9.0"
+    ext.logging_interceptor_version = '4.9.1'
+
+    ext.kotlin_coroutines_version = "1.5.1"
+    ext.lifecycle_version = "2.3.1"
+
+    ext.koin_version = "3.1.2"
+
+    ext.shimmer_version = "0.5.0"
+
+    ext.lottie_version = "4.1.0"
+    ext.annotation_version = "28.0.0"
+    ext.hdodenhof_version = "3.1.0"
+
+    ext.firebase_version = "28.4.0"
+
+    ext.googleservice_version = "4.3.10"
+
+    ext.viewpager2_version = "1.0.0"
+    ext.emoji_version = "1.1.0"
+    ext.link_version = "2.2.0"
+    ext.chat_version = "0.4.1"
+    ext.imageslider_version = "1.4.0"
+    ext.datetime_version = "3.0"
+    ext.singlecalender_version = "1.0.0"
+    ext.mapsplatformsecret_version = "1.3.0"
+    ext.maps_version = "17.0.0"
+    ext.camerax_version = "1.0.2"
+    ext.nav_version = "2.3.5"
+
+    ext.sms_version = "0.3.3"
+
+    ext.crashlytics_version = "2.7.1"
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.1"
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+//        classpath "com.google.gms:google-services:$googleservice_version"  // Google Services plugin
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//        classpath "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:$mapsplatformsecret_version"
+//        classpath "com.google.firebase:firebase-crashlytics-gradle:$crashlytics_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
